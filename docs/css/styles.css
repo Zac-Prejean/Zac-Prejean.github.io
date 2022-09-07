@@ -21,7 +21,21 @@
     --secondary: #FFFFFF;
     --content-color: #B8B8C9;
 }
-   
+
+@media (prefers-color-scheme: light) {
+:root {
+        --primary: #FFFFFF;
+        --secondary: #252525;
+        --content-color: #79959E; 
+    }
+}
+@media (prefers-color-scheme: dark) {
+:root {
+    --primary: #252525;
+    --secondary: #FFFFFF;
+    --content-color: #B8B8C9;
+}
+}
 
 body {
     color:var(--secondary);
