@@ -212,7 +212,11 @@
             <!-- registration form -->
             <div class="container mt-1">
                 <form class="row g-3" action="https://formsubmit.co/cc83e68893ae56fd31c2027a3028a118" method="POST">
-                    <div class="col-md-6">
+                    <!-- honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+
+                  <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" name="name" id="firstName" required>
                     </div>
