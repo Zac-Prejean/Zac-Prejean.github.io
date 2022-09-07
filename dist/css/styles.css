@@ -1,0 +1,159 @@
+
+
+/*--BASIC--*/
+
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:0;
+    margin:0;
+}
+:root {
+    --primary: #FFFFFF;
+    --secondary: #252525;
+    --content-color: #79959E; 
+    
+    --neutral: #A9AFA4;
+    --transition: all .2s ease-in-out;
+}
+.dark-mode {
+    --primary: #252525;
+    --secondary: #FFFFFF;
+    --content-color: #B8B8C9;
+}
+   
+
+body {
+    color:var(--secondary);
+    background:var(--primary);
+}
+
+/*--HEADER--*/
+
+.nav-style {
+    border-bottom: solid 2px var(--neutral);
+    background:var(--content-color);
+}
+.icon-con {
+    margin: 5px;
+    width: 80px;
+}
+.flex-con {
+    display: flex;
+    justify-content: space-between;
+}
+#dark {
+    width: 30px;
+    cursor: pointer;
+}
+#dark:hover, .social-icon:hover {
+    scale: 1.1;
+}
+
+/*--MAIN--*/
+
+main {
+    border-top: solid 2px var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+}
+.intro-srt {
+    border-bottom: solid 2px var(--neutral);
+}
+.intro {
+    border-top: solid 2px var(--secondary);
+    background: var(--content-color);
+    color: var(--primary);
+}
+
+/*-SKILLS-*/
+
+.skills-con {
+    background: linear-gradient(180deg, 
+    var(--content-color) 15%, var(--primary) 0%);
+}
+.skills-icon {
+    width: 100px;
+}
+.skills-1 {
+    background: var(--primary);
+    border: solid 2px var(--content-color);
+    border-radius: 10px 10px 0 0;
+}
+.skills-2 {
+    background: var(--primary);
+    border: solid 2px var(--content-color);
+    border-top: 0px;
+    border-radius: 0 0 10px 10px;
+}
+.color-shift {
+    color: var(--content-color);
+}
+
+/*-RECENT WORK-*/
+
+.card-style {
+    background: var(--primary);
+    color: var(--secondary);
+    border: 2px solid var(--content-color);
+    border-radius: 10px;
+}
+
+/*-CLOSER-*/
+
+.closer-con {
+    background: linear-gradient(180deg, 
+    var(--primary) 30%, var(--content-color) 0%);
+}
+.closer {
+    background: var(--primary);
+    border: solid 2px var(--content-color);
+    border-radius: 10px;
+}
+
+/*--FOOTER--*/
+
+footer ul {
+    list-style-type: none;
+}
+footer {
+    color: var(--primary);
+    background: var(--content-color);   
+    margin: 0;
+}
+.social-con {
+    display: flex;
+    justify-content: center;
+}
+.social-icon {
+    display: flex;
+    width: 50px;
+}
+
+
+
+
+    @media screen and (min-width: 720px) {
+
+
+    /*-MAIN-*/
+
+.computer-icon {
+    width: 600px;
+}
+
+    /*-SKILLS-*/
+
+.skills-con {
+    background: linear-gradient(180deg, 
+    var(--content-color) 30%, var(--primary) 0%);
+}
+.skills-icon {
+    width: 150px;
+}
+.skills-1, .skills-2 {
+    border-radius: 10px;
+}
+
+
+}
