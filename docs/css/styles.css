@@ -48,6 +48,11 @@ body {
     border-bottom: solid 2px var(--neutral);
     background:var(--content-color);
 }
+.proPic {
+    max-width: 200px;
+    border-radius: 100%;
+    border-bottom: 3px solid var(--secondary);
+}
 .icon-con {
     margin: 5px;
     width: 80px;
@@ -56,11 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-#dark {
-    width: 30px;
-    cursor: pointer;
-}
-#dark:hover, .social-icon:hover {
+.social-icon:hover {
     scale: 1.1;
 }
 
