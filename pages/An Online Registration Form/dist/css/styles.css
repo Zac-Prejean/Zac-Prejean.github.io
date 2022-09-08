@@ -1,0 +1,165 @@
+
+
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  color: #0D2626; 
+  background: #F7FCFC;
+  margin: 0;
+}
+body fieldset{
+	margin: 20px 0;
+	padding: 10px 5px;
+	border: none;
+}
+legend{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*header*/
+h2{
+  font-family: "Times New Roman", Times, serif;
+}
+.banner{
+	background: #369799;
+	color: #F7FCFC;
+	padding: 15px;
+}
+/*main*/
+main{
+	text-align: left;
+	margin: 15px;
+}
+.hr_3{
+	border: 3px solid #ADBCBD;
+}
+.hr_2{
+	border: 2px solid #ADBCBD;
+}
+.hr_1{
+	border: 1px solid #ADBCBD;
+}
+main form{
+  margin: 0 auto;
+  width: 100%;
+}
+main form ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main form li + li {
+  margin-top: 1em;
+}
+.contact_info, .zip_size, .required_placeholder,
+main form select, main form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #E0F4F4;
+  color: #ADBCBD;
+  font: 1.1em 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #E0F4F4;
+  outline: none;
+}
+.required_placeholder::placeholder{
+	text-align: right;
+}
+main form input:hover, main form select:hover, main form textarea:hover, 
+main form input:focus, main form select:focus, main form textarea:focus{
+  border: 1px solid #ADBCBD;
+  transition-property: border;
+  transition-duration: .3s;
+}
+main form input::placeholder{
+	text-align: left;
+	color: #ADBCBD;
+}
+main form option{
+	color: #0D2626;
+}
+.con{
+  margin: 15px 0;
+}
+.con input{
+  margin-right: 10px;
+  cursor:pointer;
+}
+.checkbox_style{
+  height: 17px;
+  width: 17px;	
+}
+main form textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.rec{
+	display: contents;
+}
+.zip_size{
+  width: 50%;
+}
+button{
+  width: 100%;
+  padding: 12px;
+  background: #91D9A9;
+  color: #F7FCFC;
+  font-size: 1.3em;
+  border: 0;
+  border-radius: 5px;
+}
+main form textarea{
+	resize: none;
+}
+
+@media screen and (min-width: 768px) {
+
+.banner{
+	padding: 5px;
+}
+main form{
+  width: 70vw;
+}
+main{
+  margin: 15px 100px;
+}
+.required_placeholder{
+	width: 55vw;
+}
+main form li{
+ display: ruby;
+}
+main form label {
+  display: flex;
+  width: 15vw;
+}
+main form input{
+	text-align: center;
+}
+.contact_info, main form select{
+	display: flex;
+	width: 55vw;
+}
+.rec{
+	display: ruby;
+}
+.zip_size{
+  width: 25%;
+}
+.con_2{
+  display: flex;
+  flex-direction: column
+}
+main form textarea{
+	height: 120px;
+}	
+}
