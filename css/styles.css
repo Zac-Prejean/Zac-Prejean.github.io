@@ -27,14 +27,14 @@
 @media (prefers-color-scheme: dark) {
 :root {
     --primary: #252525;
-    --secondary: #FFFFFF;
+    --secondary: #F4F4F9;
     --content-color: #B8B8C9;
 }
 }
 
 body {
     color:var(--secondary);
-    background:var(--primary);
+    background:#D9DBE0;
 }
 
 /*--HEADER--*/
