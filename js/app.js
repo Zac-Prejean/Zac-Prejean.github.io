@@ -1,21 +1,29 @@
 
 
-const lightIcon = document.getElementById("computerLight");
-const darkIcon = document.getElementById("computerDark");
-var lightTheme = window.matchMedia("(prefers-color-scheme: light)");
-var darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
-
+var icon = document.getElementById("icon")
+var computerIcon = document.getElementById("computer")
+let topBtn = document.getElementById("top-btn");
 
 //--DARK MODE
 
-if (lightTheme) {
-    darkIcon.style.display = "none";
-    lightIcon.style.display = "show";
-} else if (darkTheme){
-    lightIcon.style.display = "none";
-    darkIcon.style.display = "show";
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")){
+        icon.src = "images/sun.png";
+        computerIcon.src = "images/Computer-icon-night.svg";
+    } else {
+        icon.src= "images/moon.png";
+        computerIcon.src = "images/Computer-icon-day.svg";
+    }
+};
+
+//--Back TO TOP BTN
+
+topBtn.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
-console.log(lightTheme)
-console.log(darkTheme)

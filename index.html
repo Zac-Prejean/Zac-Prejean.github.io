@@ -15,6 +15,7 @@
         <div class = "icon-con">
           <a class="navbar-brand" href="https://www.linkedin.com/in/zachary-prejean" target="_blank"><img src="images/Logo.svg" alt="Zachary Prejean's personal logo" class="m-1"></a>
         </div>
+
         <div class="flex-cin">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,8 @@
               <a class="nav-link" href="#about">About</a>
               <a class="nav-link" href="#skills">Skills</a>
               <a class="nav-link" href="#recent-work">Recent</a>
-            </div>          
+            </div>   
+            <img src="images/moon.png" id="icon" alt="Icon for dark theme toggle switch.">   
         </div>
         </div>
         </div>
@@ -38,12 +40,11 @@
         
       <div class="mx-auto col-md-8">
         <h1 class="display-4 fw-bold">Front-End Developer & Designeer</h1>
-        <p class="lead">I code and design beautifully simple things, and love what I do.</p>
+        <p class="lead">I design and code beautifully simple projects, and love what I do.</p>
         </div>
 
         <div>
-        <img src="images/Computer-Icon-day.svg" class="computer-icon-light  mt-4" alt="Icon of a computer, tablet, and phone." id="computerLight">
-        <img src="images/Computer-Icon-night.svg" class="computer-icon-dark mt-4" alt="Icon of a computer, tablet, and phone." id="computerDark">
+          <img src="images/Computer-Icon-day.svg" id="computer" class="mt-4" alt="Icon of a computer, tablet, and phone.">
         </div>
     </div>
     
@@ -69,9 +70,11 @@
                 <p>Web, Apps, Logos</p>
                 <p class="fs-5 color-shift">Design Tools</p>
                 <div>
-                    <p>Photoshop</p>
-                    <p>Aseprite</p>
+                    <p>After Effects</p>
                     <p>Pen & Paper</p>
+                    <p>Photoshop</p>
+                    <p>Illustrator</p>
+                    <p>Aseprite</p>                   
                 </div>
             </div>
 
@@ -80,12 +83,14 @@
                 <h2 class="fw-semibold">Front-End Developer</h2>
                 <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                 <p class="fs-5 color-shift">Languages I Speak:</p>
-                <p>HTML, CSS, Sass, Java, Git</p>
+                <p>HTML, CSS, SASS, JAVA, GIT</p>
                 <p class="fs-5 color-shift">Developer Tools</p>
                 <div>
+                    <p>Visual Studio</p>
+                    <p>Notepad ++</p>
                     <p>Bootstrap</p>
-                    <p>Github</p>
-                    <p>Terminal</p>
+                    <p>Shopify</p>
+                    <p>React</p>
                 </div>
             </div>
         </div>
@@ -106,7 +111,8 @@
 
     <div class="container p-3" id="recent-work">
         <h2  class="fw-bold">My Recent Work</h2>
-        <p class="fw-semibold">Here are a few design projects I have worked on.</p>
+        <p class="fw-semibold">Here are a few design projects I have worked on while studying at Treehouse.
+        </p>
     </div>
     
     <div class="row m-3">
@@ -197,7 +203,10 @@
     </div>
     <div class="m-3 text-center">
     <hr>
-        <small>© 2022, Zachary Prejean</small>
+    
+    <button type="button" class="btn btn-secondary btn-floating btn-sm" id="top-btn">Back to Top</button>
+    <small>© 2022, Zachary Prejean</small>
+
     </div>
     </footer>
     
@@ -235,7 +244,7 @@
                     </div>
                     <div class="col-md-5">
                         <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (555) 867-5309" required>
+                        <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1(555)867-5309" required>
                     </div>
                     <div class="col-md-12">
                         <textarea class="form-control" placeholder="Type your ideas here..." name="comments,&nbsp;questions" id="floatingTextarea2" style="height: 100px"></textarea>

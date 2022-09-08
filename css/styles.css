@@ -16,6 +16,11 @@
     --neutral: #A9AFA4;
     --transition: all .2s ease-in-out;
 }
+.dark-theme {
+    --primary: #252525;
+    --secondary: #F4F4F9;
+    --content-color: #B8B8C9;
+}
 
 @media (prefers-color-scheme: light) {
 :root {
@@ -39,6 +44,10 @@ body {
 
 /*--HEADER--*/
 
+#icon {
+    width:30px;
+    cursor: pointer;
+}
 .nav-style {
     border-bottom: solid 2px var(--neutral);
     background:var(--content-color);
@@ -148,7 +157,7 @@ footer {
 
     /*-MAIN-*/
 
-.computer-icon-light, .computer-icon-dark {
+#computer {
     width: 600px;
 }
 
