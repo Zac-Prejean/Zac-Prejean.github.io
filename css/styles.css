@@ -148,7 +148,7 @@ footer {
 
     /*-MAIN-*/
 
-.computer-icon {
+.computer-icon-light, .computer-icon-dark {
     width: 600px;
 }
 
