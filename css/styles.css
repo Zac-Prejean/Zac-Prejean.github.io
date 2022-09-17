@@ -47,7 +47,7 @@ body {
 .hero {
     background-image: url('../images/jumbotron.png');
     background-color: var(--secondary);
-    height: 30vh;
+    height: 40vh;
     position: relative;
 }
 .hero::after {
