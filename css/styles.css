@@ -255,7 +255,7 @@ footer {
     /*-SKILLS-*/
 
 .skills-con {
-    background-color: linear-gradient(180deg, 
+    background: linear-gradient(180deg, 
     var(--content-color) 30%, var(--primary) 0%);
 }
 .skills-icon {
