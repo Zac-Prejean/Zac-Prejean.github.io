@@ -1,7 +1,6 @@
 
 
 var icon = document.getElementById("icon")
-var computerIcon = document.getElementById("computer")
 let topBtn = document.getElementById("top-btn");
 
 //--DARK MODE
@@ -10,10 +9,8 @@ icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")){
         icon.src = "images/sun.png";
-        computerIcon.src = "images/Computer-icon-night.svg";
     } else {
         icon.src= "images/moon.png";
-        computerIcon.src = "images/Computer-icon-day.svg";
     }
 };
 
@@ -26,4 +23,12 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+//--Typed Text
+
+var typed =new Typed(".auto-type", {
+    strings: ["Project", "topic", "party", "Idea" ],
+    typeSpeed: 100,
+    backSpeed: 150,
+    loop: true,
+})
 
